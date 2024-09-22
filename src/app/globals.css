@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.react-calendar {
+  width: 100% !important;
+  border: none !important;
+  padding: 10px !important;
+  border-radius: 10px !important;
+  background-color: #ffffff !important;
+}
+.react-calendar button {
+  @apply text-main rounded-xl;
+  @apply focus:bg-transparent focus:outline-none;
+}
+.react-calendar button {
+  @apply hover:bg-green-200 hover:text-black;
+}
+
+.react-calendar__navigation button {
+  @apply bg-fadeLight hover:bg-fadeLight;
+}
+
+.react-calendar__navigation button:enabled:focus {
+  background-color: transparent !important;
+  outline: none !important;
+}
+.react-calendar__tile--now {
+  background: blue !important;
+  color: white !important;
+}
+.react-calendar__tile--active {
+  background: #d2d6fa !important;
+  color: #000 !important;
+}
+.react-calendar__month-view__weekdays {
+  background: white !important;
+  border-radius: 20px !important;
+  text-align: center !important;
+  font-size: 12px !important;
+  margin: 10px 10px !important;
+  font-weight: lighter !important;
+  text-decoration-line: none !important;
+  @apply text-gray-600 no-underline;
+}

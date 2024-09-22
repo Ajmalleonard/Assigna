@@ -1,6 +1,6 @@
 // TEMPORARY DATA
 
-export let role = "admin";
+export let role = "student";
 
 export const teachersData = [
   {
@@ -915,7 +915,6 @@ export const announcementsData = [
   },
 ];
 
-
 // YOU SHOULD CHANGE THE DATES OF THE EVENTS TO THE CURRENT DATE TO SEE THE EVENTS ON THE CALENDAR
 export const calendarEvents = [
   {
@@ -1059,5 +1058,106 @@ export const calendarEvents = [
     allDay: false,
     start: new Date(2024, 7, 16, 14, 0),
     end: new Date(2024, 7, 16, 14, 45),
+  },
+];
+
+export const events = [
+  {
+    id: 1,
+    title: "Web Development Workshop",
+    time: "09:00 - 17:00",
+    descriptions:
+      "Join us for an intensive full-day workshop on modern web development techniques. We'll cover React, Node.js, and GraphQL. Suitable for intermediate developers looking to enhance their skills.",
+  },
+  {
+    id: 2,
+    title: "Startup Pitch Night",
+    time: "18:30 - 21:00",
+    descriptions:
+      "Watch 10 exciting startups pitch their ideas to a panel of venture capitalists. Networking opportunities available after the pitches. Light refreshments will be served.",
+  },
+  {
+    id: 3,
+    title: "AI in Healthcare Conference",
+    time: "10:00 - 16:00",
+    descriptions:
+      "Explore the latest advancements in AI applications for healthcare. Featuring keynote speakers from leading research institutions and medical technology companies.",
+  },
+  {
+    id: 4,
+    title: "Local Food Festival",
+    time: "11:00 - 20:00",
+    descriptions:
+      "Celebrate our city's culinary diversity! Over 50 local restaurants and food trucks will be showcasing their best dishes. Live music and cooking demonstrations throughout the day.",
+  },
+  {
+    id: 5,
+    title: "Yoga in the Park",
+    time: "07:00 - 08:30",
+    descriptions:
+      "Start your day with a rejuvenating yoga session in Central Park. All skill levels welcome. Please bring your own mat and water bottle.",
+  },
+  {
+    id: 6,
+    title: "Photography Exhibition Opening",
+    time: "19:00 - 22:00",
+    descriptions:
+      "Be among the first to view 'Urban Perspectives', a collection of street photography from around the world. Meet the artists and enjoy complimentary wine and cheese.",
+  },
+  {
+    id: 7,
+    title: "Blockchain Technology Seminar",
+    time: "13:00 - 17:30",
+    descriptions:
+      "Delve into the world of blockchain with industry experts. Topics include cryptocurrency, smart contracts, and the future of decentralized finance.",
+  },
+  {
+    id: 8,
+    title: "Charity Run for Education",
+    time: "08:00 - 11:00",
+    descriptions:
+      "Participate in our annual 5K run to raise funds for local schools. Registration includes a t-shirt and post-race refreshments. All ages and abilities welcome.",
+  },
+  {
+    id: 9,
+    title: "Electric Vehicle Showcase",
+    time: "10:00 - 18:00",
+    descriptions:
+      "Explore the latest in electric vehicle technology. Test drives available for select models. Learn about charging infrastructure and government incentives for EV adoption.",
+  },
+  {
+    id: 10,
+    title: "Jazz Night at Blue Note",
+    time: "20:00 - 23:30",
+    descriptions:
+      "Enjoy an evening of smooth jazz featuring the renowned quartet 'Midnight Groove'. Dinner reservations recommended. Two sets with an intermission.",
+  },
+  {
+    id: 10,
+    title: "Jazz Night at Blue Note",
+    time: "20:00 - 23:30",
+    descriptions:
+      "Enjoy an evening of smooth jazz featuring the renowned quartet 'Midnight Groove'. Dinner reservations recommended. Two sets with an intermission.",
+  },
+  {
+    id: 10,
+    title: "Jazz Night at Blue Note",
+    time: "20:00 - 23:30",
+    descriptions:
+      "Enjoy an evening of smooth jazz featuring the renowned quartet 'Midnight Groove'. Dinner reservations recommended. Two sets with an intermission.",
+  },
+  {
+    id: 10,
+    title: "Jazz Night at Blue Note",
+    time: "20:00 - 23:30",
+    descriptions:
+      "Enjoy an evening of smooth jazz featuring the renowned quartet 'Midnight Groove'. Dinner reservations recommended. Two sets with an intermission.",
+  },
+  {
+    id: 10,
+    title: "Jazz Night at Blue Note",
+    time: "20:00 - 23:30",
+    descriptions:
+      "Enjoy an evening of smooth jazz featuring the renowned quartet 'Midnight Groove'. Dinner reservations recommended. Two sets with an intermission.",
   },
 ];
