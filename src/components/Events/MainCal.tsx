@@ -1,9 +1,11 @@
+"use client";
 import { MoreHorizontal } from "lucide-react";
 import React, { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import { motion, AnimatePresence } from "framer-motion";
 import { events } from "@/lib/data";
+import { usePathname } from "next/navigation";
 
 type ValuePiece = Date | null;
 
@@ -24,6 +26,8 @@ function CalendarView() {
   const toggleAnnouncements = () =>
     setShowAllAnnouncements(!showAllAnnouncements);
 
+  const pathname = usePathname().split("/")[1];
+
   const renderItems = (items: Event[], showAll: boolean) => {
     const displayItems = showAll ? items : items.slice(0, 3);
     return displayItems.map((item) => (
@@ -42,8 +46,13 @@ function CalendarView() {
 
   return (
     <div className="w-full h-full  p-4 overflow-y-scroll">
-      <h3 className="text-sm font-semibold">Calendar</h3>
-      <Calendar onChange={onChange} />
+      {pathname !== "teacher" && (
+        <>
+          {" "}
+          <h3 className="text-sm font-semibold">Calendar</h3>
+          <Calendar onChange={onChange} />
+        </>
+      )}
 
       <div className="flex flex-col gap-2 my-4">
         <div className="flex justify-between items-center">

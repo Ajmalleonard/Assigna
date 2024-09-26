@@ -1,8 +1,8 @@
 "use client";
 import CalendarView from "@/components/Events/MainCal";
 import DashCard from "@/components/DashCard";
-import Finance from "@/components/charts/Finance";
-import Students from "@/components/charts/Students";
+import Finance from "@/components/Charts/Finance";
+import Students from "@/components/Charts/Students";
 import { MoreHorizontal } from "lucide-react";
 import React from "react";
 

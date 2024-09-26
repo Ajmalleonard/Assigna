@@ -121,16 +121,15 @@ import React from "react";
 
 function Menu() {
   return (
-    <div className="my-5">
+    <div className="">
       {menuItems.map((i) => (
         <div key={i.title}>
-          <span className="text-gray-300 hidden lg:block">{i.title}</span>
           {i.items.map((it) => {
             if (it.visible.includes(role)) {
               return (
                 <Link
                   key={it.label}
-                  className="flex gap-4 my-4 items-center justify-start"
+                  className="flex gap-4 mb-4 items-center justify-start"
                   href={it.href}
                 >
                   <Image src={it.icon} alt={it.label} width={18} height={18} />

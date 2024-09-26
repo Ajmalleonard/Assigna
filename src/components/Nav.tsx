@@ -6,7 +6,7 @@ function Nav() {
   return (
     <nav className="w-full flex items-center justify-end md:justify-between">
       {/* Search component */}
-      <div className=" gap-2 border-[1px] border-gray-400 px-4 text-gray-600 py-1 bg-white dark:bg-fadeLight rounded-full hidden md:flex items-center  justify-between">
+      <div className=" gap-2 border-[1px] border-gray-400 px-4 text-gray-600 py-2  rounded-full hidden md:flex items-center  justify-between">
         <Search className=" w-3 h-3" />
         <input
           type="text"
